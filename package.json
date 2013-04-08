@@ -1,0 +1,24 @@
+{
+  "name": "karma-script-launcher",
+  "version": "0.0.1",
+  "description": "A Karma plugin. Launcher for shell scripts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/karma-runner/karma-script-launcher.git"
+  },
+  "keywords": [
+    "karma-plugin",
+    "launcher",
+    "script"
+  ],
+  "author": "Vojta Jina <vojta.jina@gmail.com>",
+  "dependencies": {},
+  "peerDependencies": {
+    "karma": "~0.9"
+  },
+  "license": "MIT"
+}
