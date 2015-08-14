@@ -1,4 +1,4 @@
-# karma-scripts-launcher
+# karma-script-launcher
 
 > Launcher for a shell script.
 
@@ -7,19 +7,19 @@ a single argument - the url that the browser should open.
 
 ## Installation
 
-The easiest way is to keep `karma-scripts-launcher` as a devDependency in your `package.json`.
+The easiest way is to keep `karma-script-launcher` as a devDependency in your `package.json`.
 ```json
 {
   "devDependencies": {
     "karma": "~0.10",
-    "karma-scripts-launcher": "~0.1"
+    "karma-script-launcher": "~0.1"
   }
 }
 ```
 
 You can simple do it by:
 ```bash
-npm install karma-scripts-launcher --save-dev
+npm install karma-script-launcher --save-dev
 ```
 
 ## Configuration
