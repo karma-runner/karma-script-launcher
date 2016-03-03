@@ -35,5 +35,9 @@
     "grunt-npm": "~0.0.2",
     "load-grunt-tasks": "^3.4.1"
   },
-  "contributors": []
+  "contributors": [
+    "dignifiedquire <dignifiedquire@gmail.com>",
+    "Alex Kessock <akessock@gmail.com>",
+    "Friedel Ziegelmayer <dignifiedquire@gmail.com>"
+  ]
 }
