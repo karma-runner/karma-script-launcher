@@ -10,26 +10,45 @@ module.exports = function (grunt) {
       ]
     },
 
-    'npm-publish': {
+    conventionalChangelog: {
+      release: {
+        options: {
+          changelogOpts: {
+            preset: 'angular'
+          }
+        },
+        src: 'CHANGELOG.md'
+      }
+    },
+
+    conventionalGithubReleaser: {
+      release: {
+        options: {
+          auth: {
+            type: 'oauth',
+            token: process.env.GH_TOKEN
+          },
+          changelogOpts: {
+            preset: 'angular'
+          }
+        }
+      }
+    },
+
+    bump: {
       options: {
-        abortIfDirty: true
+        commitMessage: 'chore: release v%VERSION%',
+        pushTo: 'upstream',
+        commitFiles: [
+          'package.json',
+          'CHANGELOG.md'
+        ]
       }
     },
 
     'npm-contributors': {
       options: {
         commitMessage: 'chore: Update contributors'
-      }
-    },
-
-    bump: {
-      options: {
-        updateConfigs: ['pkg'],
-        commitFiles: ['package.json', 'CHANGELOG.md'],
-        commitMessage: 'chore: release v%VERSION%',
-        pushTo: 'upstream',
-        push: false,
-        gitDescribeOptions: '| echo "beta-$(git rev-parse --short HEAD)"'
       }
     }
   })
