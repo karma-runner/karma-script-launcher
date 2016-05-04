@@ -1,6 +1,6 @@
 {
   "name": "karma-script-launcher",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "A Karma plugin. Launcher for shell scripts.",
   "main": "index.js",
   "scripts": {
